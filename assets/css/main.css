@@ -3405,7 +3405,14 @@ input, select, textarea {
 				opacity: 1;
 				visibility: visible;
 			}
-
+			#intro.hidden + #header .logo.hidden {
+				-moz-transform: translateY(2rem);
+				-webkit-transform: translateY(2rem);
+				-ms-transform: translateY(2rem);
+				transform: translateY(2rem);
+				opacity: 0;
+				visibility: hidden;
+			}
 			#header .logo.hidden {
 				-moz-transform: translateY(2rem);
 				-webkit-transform: translateY(2rem);
