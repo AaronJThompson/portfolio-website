@@ -13,6 +13,7 @@
 		$nav = $('#nav'),
 		$main = $('#main'),
 		$navPanelToggle, $navPanel, $navPanelInner;
+	var $headerLogo = $('#header .logo');
 
 	// Breakpoints.
 		breakpoints({
@@ -254,5 +255,16 @@
 			});
 
 		}
+
+		
+		$headerLogo.scrollex({
+			bottom: '10vh',
+			enter: function() {
+				$headerLogo.removeClass('hidden');
+			},
+			leave: function() {
+				$headerLogo.addClass('hidden');
+			}
+		});
 
 })(jQuery);

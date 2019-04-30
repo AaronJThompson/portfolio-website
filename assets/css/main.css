@@ -3406,6 +3406,15 @@ input, select, textarea {
 				visibility: visible;
 			}
 
+			#header .logo.hidden {
+				-moz-transform: translateY(2rem);
+				-webkit-transform: translateY(2rem);
+				-ms-transform: translateY(2rem);
+				transform: translateY(2rem);
+				opacity: 0;
+				visibility: hidden;
+			}
+
 		body.is-preload #intro {
 			-moz-transform: translateY(2rem);
 			-webkit-transform: translateY(2rem);
